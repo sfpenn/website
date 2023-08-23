@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production npm-run-all clean -p build:*",
+    "build-win": "set NODE_ENV=production && npm-run-all clean-win -p build:*",
     "build:11ty": "eleventy --quiet",
     "build:vite": "vite build",
     "clean": "rm -rf dist",
+    "clean-win": "rd /s /q dist",
     "dev": "NODE_ENV=development npm-run-all -p dev:*",
     "dev:11ty": "eleventy --quiet --serve",
     "dev:vite": "vite"
@@ -35,7 +37,8 @@
   },
   "homepage": "https://github.com/mattwaler/tea-stack#readme",
   "dependencies": {
-    "alpinejs": "^3.1.0"
+    "alpinejs": "^3.1.0",
+    "eleventy-plugin-pwa-v2": "^1.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

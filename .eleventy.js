@@ -1,4 +1,5 @@
 const twig = require("@factorial/eleventy-plugin-twig");
+const pluginPWA = require("eleventy-plugin-pwa-v2");
 
 const twigOptions = {
   twig: {
@@ -15,6 +16,7 @@ const twigOptions = {
 module.exports = (config) => {
   config.addPassthroughCopy({ 'public': './' })
   config.addPlugin(twig, twigOptions)
+  config.addPlugin(pluginPWA)
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
     open: true,

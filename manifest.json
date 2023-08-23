@@ -1,0 +1,24 @@
+{
+  "short_name": "Swordfight@Penn",
+  "name": "Swordfight @ Penn (SFP)",
+  "description": "Swordfight@Penn: Penn's Premier Swordfighting Club",
+  "icons": [
+    {
+      "src": "/images/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/source=pwa",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "theme_color": "#111827"
+}
